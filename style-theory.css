@@ -321,3 +321,14 @@ a:active {
 .social-link > svg {
   fill: var(--text-color);
 }
+@media screen and (max-width: 600px) {
+html {
+  font-size: 50%;
+}
+.col-1-2 {
+  width: 100%;
+}
+.container {
+  width: 550px;
+}
+}
