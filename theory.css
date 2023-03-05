@@ -21,14 +21,12 @@
     --line-height-base: 1.5;
     --line-height-big: 1.8;
 }
-/* General Settings*/
 *,
 *:after,
 *:before {
   box-sizing: border-box;
   margin: 0;
 }
-
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -49,8 +47,6 @@ h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
 }
-
-/*Nav bar settings*/
 nav {
     background-color: var(--red);
     color: var(--white);
@@ -76,8 +72,6 @@ a {
     color: var(--white);
     text-decoration: none;
 }
-
-/* All Section class*/
 .section {
     padding: 5rem;
 }
@@ -89,6 +83,7 @@ a {
     font-weight: var(--font-weight-bold);
     font-family: var(--font-family-title);
     color: var(--black);
+    text-align: center;
 }
 .section-tagline {
     font-family: var(--font-family-title);
@@ -97,83 +92,13 @@ a {
     color: var(--red);
     text-transform: capitalize;
 }
-.section-hero {
-    background-color: var(--black);
-    padding: 10px;
-    height: 170px;
-}
-.section-hero .section-title {
-    color: var(--white);
-    padding: 10px;
-}
-.button {
-    border: 2px solid var(--gold);
-    padding: 15px;
-    margin: 25px;
-    color: var(--white);
-}
-.button:hover {
-    text-decoration: none;
-    background-color: var(--gold);
-    color: var(--white);
-    transition-duration: 0.3s;
-    transition-property: color, background-color;
-}
-.container .section-body .about_us_img img {
-    width: 100%;
-}
 
-/* Intructor Section */
-.card img {
-    border-radius: 50%;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-.card {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    width: 90%;
-}
-/* Form section */
-.form {
-    padding: 5px;
-    margin: 5px;
-    display: block;
-}
-label {
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-medium);
-    color: var(--black);
-}
-input[type="text"], input[type="email"], input[type="tel"], textarea{
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-medium);
-    color: var(--black);
-    background-color: var(--white);
-    border-radius: 5px;
-    padding: 10px;
-    box-sizing: border-box;
+.right img {
     width: 100%;
-    resize: none;
 }
-button {
-    border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    color: var(--red);
-    background-color: #242424;
+.left img {
     width: 100%;
-    font-size: var(--font-size-medium);
 }
-button:hover {
-    background-color: var(--red);
-    color: var(--white);
-}
-
-/* Footer */
 .footer {
     background-color: var(--red);
     font-size: 1.5rem;
@@ -193,9 +118,8 @@ button:hover {
 .footer-content {
     float: right;
 }
-
 @media only screen and (min-width: 992px) {
-    nav {
+        nav {
         display: flex;
         align-items: center;
         font-size: var(--font-size-x-large);
@@ -216,22 +140,10 @@ button:hover {
     html {
         font-size: 75%;
     }
-    .instructor {
-        width: 100%;
-        display: flex;
-        float: left;
-        margin: 15px;
-    }
-    .footer-logo img {
+        .footer-logo img {
         height: 100px;
     }
     .footer-content {
         padding: 5px;
-    }
-    .container .section-body .about_us_img img {
-        width: 40%;
-    }
-    .about_us_img {
-        text-align: center;
     }
 }
